@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fraxBIT: Premium Web Design, Development &amp; AI Agency</title>
+<meta name="description" content="fraxBIT is a digital design and growth studio building premium websites, landing pages and AI-powered systems for businesses that want to look more trusted and win better clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='13' width='26' height='6' rx='3' fill='%23ff2626'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader" data-theme="dark">
+  <a class="logo" href="#top" data-scroll aria-label="fraxBIT, back to top">frax<span>BIT</span><i class="logo-mark" aria-hidden="true"></i></a>
+  <nav class="main-nav" aria-label="Main">
+    <a href="#work" data-scroll>Portfolio</a>
+    <a href="#services" data-scroll>Services</a>
+    <a href="#why" data-scroll>About</a>
+  </nav>
+  <div class="header-actions">
+    <button class="btn-talk" data-book>Let&rsquo;s talk <span class="arr-circle" aria-hidden="true">&rarr;</span></button>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <nav aria-label="Mobile">
+    <a href="#work" data-scroll>Portfolio</a>
+    <a href="#services" data-scroll>Services</a>
+    <a href="#why" data-scroll>About</a>
+    <a href="#process" data-scroll>Process</a>
+    <a href="#stories" data-scroll>Client stories</a>
+    <button class="btn btn-red" data-book>Let&rsquo;s talk</button>
+  </nav>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero" data-header="dark">
+    <div class="hero-pin">
+      <canvas id="globe" aria-hidden="true"></canvas>
+      <div class="hero-content" id="heroContent">
+        <p class="eyebrow light"><i class="star" aria-hidden="true"></i> Digital design &amp; growth studio</p>
+        <h1>Design. Build. Grow<span class="dot">.</span></h1>
+        <p class="hero-sub">Premium websites, landing pages and AI-powered systems for businesses that want to look more trusted and win better clients.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-white" data-book>Book a consultation <span class="arr-circle dark" aria-hidden="true">&rarr;</span></button>
+          <a class="text-link light" href="#work" data-scroll>View our work <span class="arr-circle ghost" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="hero-stats">
+          <div class="hstat"><span class="hstat-label">Projects delivered</span><strong><span data-count="projects">0</span><span class="plus">+</span></strong></div>
+          <div class="hstat"><span class="hstat-label">Countries reached</span><strong><span data-count="countries">0</span></strong></div>
+          <div class="hstat"><span class="hstat-label">Years in business</span><strong><span data-count="years">0</span><span class="plus">+</span></strong></div>
+        </div>
+        <p class="trusted">Trusted by brands across Europe, United States, UAE, Mauritius and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="sheet dark services" id="services" data-header="dark" style="--z:2">
+    <div class="wrap sheet-inner">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><i class="star" aria-hidden="true"></i> What we do</p>
+          <h2>Four disciplines. One studio<span class="dot">.</span></h2>
+        </div>
+        <p class="section-side">Every project is built around one outcome: a digital presence that pays you back.</p>
+      </div>
+      <div class="svc-rows" id="svcRows"></div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <section class="sheet light work" id="work" data-header="light" style="--z:3">
+    <div class="wrap sheet-inner">
+      <p class="eyebrow dark"><i class="star" aria-hidden="true"></i> Portfolio</p>
+      <h2 class="dark-h">Selected work<span class="dot">.</span></h2>
+      <div class="work-grid" id="workGrid"></div>
+      <div class="work-foot">
+        <button class="btn btn-dark" data-all-projects>View all projects <span class="arr-circle red" aria-hidden="true">&rarr;</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="sheet dark process" id="process" data-header="dark" style="--z:4">
+    <div class="wrap sheet-inner">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><i class="star" aria-hidden="true"></i> How we work</p>
+          <h2>From idea to launch<span class="dot">.</span></h2>
+        </div>
+        <div class="section-side">
+          <p>What we build, how we get there and the tools we trust along the way.</p>
+          <button class="btn btn-outline" data-book>Book a strategy call <span class="arr-circle" aria-hidden="true">&rarr;</span></button>
+        </div>
+      </div>
+
+      <div class="p-block">
+        <p class="p-eyebrow"><span>01</span> <i class="star" aria-hidden="true"></i> What we build</p>
+        <p class="mega" id="megaPara" aria-label="Landing pages, corporate websites, e-commerce stores, personal brand sites, award-level showcases, web apps and dashboards, SaaS platforms, mobile apps, AI assistants, custom platforms"></p>
+      </div>
+
+      <div class="p-block">
+        <p class="p-eyebrow"><span>02</span> <i class="star" aria-hidden="true"></i> Our process</p>
+        <div class="timeline" id="timeline">
+          <div class="tl-track"><div class="tl-fill" id="tlFill"></div></div>
+          <div class="tl-nodes" id="tlNodes"></div>
+        </div>
+      </div>
+
+      <div class="p-block">
+        <p class="p-eyebrow"><span>03</span> <i class="star" aria-hidden="true"></i> How we build it</p>
+        <div class="chip-wall" id="chipWall"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY FRAXBIT ============ -->
+  <section class="sheet light why" id="why" data-header="light" style="--z:5">
+    <div class="wrap sheet-inner">
+      <p class="eyebrow dark centre"><i class="star" aria-hidden="true"></i> Why fraxBIT</p>
+      <h2 class="dark-h centre">Why brands choose us<span class="dot">.</span></h2>
+      <div class="why-grid">
+        <figure class="bust bust-left reveal-x-l">
+          <figcaption class="bust-cap"><span>[ Without us ]</span><em>Imperfect creation</em></figcaption>
+          <img src="img/bust-cracked.webp" alt="A cracked, crumbling marble bust, a brand before fraxBIT" loading="lazy">
+        </figure>
+        <ol class="reasons" id="reasons">
+          <li class="reveal"><span class="r-num">01</span><div><h3>Custom &amp; human-crafted</h3><p>Custom solutions, never recycled templates.</p></div></li>
+          <li class="reveal"><span class="r-num">02</span><div><h3>Modern &amp; premium</h3><p>Clean, timeless design that is built to convert.</p></div></li>
+          <li class="reveal"><span class="r-num">03</span><div><h3>Built to grow</h3><p>Made for business growth, not just aesthetics.</p></div></li>
+          <li class="reveal"><span class="r-num">04</span><div><h3>Direct communication</h3><p>You talk to the people who actually do the work.</p></div></li>
+        </ol>
+        <figure class="bust bust-right reveal-x-r">
+          <figcaption class="bust-cap"><span>[ With us ]</span><em>Perfected creation</em></figcaption>
+          <img src="img/bust-sunglasses.webp" alt="A flawless marble bust wearing sunglasses, a brand after fraxBIT" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE WORK (RED) ============ -->
+  <section class="sheet red thework" id="thework" data-header="red" style="--z:6">
+    <div class="wrap sheet-inner thework-grid">
+      <div class="thework-copy">
+        <p class="eyebrow light"><i class="star light-star" aria-hidden="true"></i> The work</p>
+        <h2><span data-stat="projects">240</span>+ projects. One standard.</h2>
+        <p>Websites, platforms and dashboards for brands in <span data-stat="countries">22</span> countries. Every single one designed from scratch, never from a template.</p>
+        <button class="btn btn-white" data-all-projects>View all projects <span class="arr-circle dark" aria-hidden="true">&rarr;</span></button>
+      </div>
+      <div class="collage" aria-hidden="true">
+        <div class="col col-a"><div class="col-track" id="colA"></div></div>
+        <div class="col col-b"><div class="col-track" id="colB"></div></div>
+        <div class="col col-c"><div class="col-track" id="colC"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLIENT STORIES ============ -->
+  <section class="sheet dark stories" id="stories" data-header="dark" style="--z:7">
+    <div class="wrap sheet-inner">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><i class="star" aria-hidden="true"></i> Client stories</p>
+          <h2>Don&rsquo;t take our word for it<span class="dot">.</span></h2>
+        </div>
+        <div class="clutch-badge" aria-label="Rated five stars on Clutch">
+          <span class="clutch-word">Clutch</span>
+          <span class="clutch-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="clutch-line">5.0 rated agency</span>
+        </div>
+      </div>
+      <div class="t-carousel" id="tCarousel">
+        <div class="t-track" id="tTrack"></div>
+      </div>
+      <div class="t-controls">
+        <button class="sq-btn" id="tPrev" aria-label="Previous story">&larr;</button>
+        <div class="t-dots" id="tDots"></div>
+        <button class="sq-btn" id="tNext" aria-label="Next story">&rarr;</button>
+      </div>
+      <p class="t-note">The first story is the testimonial shown in the source film; its client&rsquo;s name was not legible in the footage, so no name is shown. The remaining stories are composed for this demo build in the same voice.</p>
+    </div>
+  </section>
+
+  <!-- ============ GET STARTED (closing, composed after the live site's pattern) ============ -->
+  <section class="sheet light start" id="start" data-header="light" style="--z:8">
+    <div class="wrap sheet-inner start-grid">
+      <div class="start-copy">
+        <p class="eyebrow dark"><i class="star" aria-hidden="true"></i> Get started</p>
+        <h2 class="dark-h">Let&rsquo;s build your next standout project<span class="dot">.</span></h2>
+        <p class="avail"><span class="avail-dot" aria-hidden="true"></span> Available for work</p>
+        <p>Tell us where your business is going. We reply within one working day with next steps, a timeline and a straight answer on fit.</p>
+        <ul class="start-points">
+          <li>Strategy call first, no obligation</li>
+          <li>Fixed scope and price before build</li>
+          <li>Direct line to the people doing the work</li>
+        </ul>
+      </div>
+      <form class="project-form" id="projectForm" novalidate>
+        <div class="pf-row">
+          <label>Your name<input type="text" id="pfName" placeholder="Full name" autocomplete="name"></label>
+          <label>Work email<input type="email" id="pfEmail" placeholder="you@company.com" autocomplete="email"></label>
+        </div>
+        <div class="pf-row">
+          <label>Project type
+            <select id="pfType">
+              <option>Website design</option>
+              <option>Development</option>
+              <option>Growth</option>
+              <option>AI integration</option>
+              <option>A mix of these</option>
+            </select>
+          </label>
+          <label>Budget
+            <select id="pfBudget">
+              <option>Under $5k</option>
+              <option>$5k to $15k</option>
+              <option>$15k to $50k</option>
+              <option>Over $50k</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+        </div>
+        <label>About the project<textarea id="pfDetails" rows="4" placeholder="What are you building, and what should it achieve?"></textarea></label>
+        <p class="form-error" id="pfError" hidden></p>
+        <button class="btn btn-red pf-submit" type="submit">Send the project <span class="arr-circle dark" aria-hidden="true">&rarr;</span></button>
+        <div class="form-success" id="pfSuccess" hidden>
+          <p class="fs-title">Project received.</p>
+          <p id="pfSuccessText"></p>
+          <button class="text-link dark" type="button" id="pfAgain">Send another project</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-header="dark">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="logo light-logo" href="#top" data-scroll>frax<span>BIT</span><i class="logo-mark" aria-hidden="true"></i></a>
+      <p>Digital design and growth studio. Premium websites, landing pages and AI-powered systems, designed from scratch.</p>
+      <p class="footer-note">Demo website built from a design study of the agency&rsquo;s own film. Figures are the brand&rsquo;s own published numbers. The closing section follows the live site&rsquo;s pattern and was not part of the film.</p>
+    </div>
+    <nav class="footer-col" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="#services" data-scroll>Services</a>
+      <a href="#work" data-scroll>Portfolio</a>
+      <a href="#process" data-scroll>Process</a>
+      <a href="#why" data-scroll>About</a>
+      <a href="#stories" data-scroll>Client stories</a>
+    </nav>
+    <div class="footer-col">
+      <h3>Start</h3>
+      <button data-book>Book a consultation</button>
+      <button data-book data-topic="Development">Book a strategy call</button>
+      <a href="#start" data-scroll>Send a project</a>
+    </div>
+    <div class="footer-col">
+      <h3>Proof</h3>
+      <p><span data-stat="projects">240</span>+ projects delivered</p>
+      <p><span data-stat="countries">22</span> countries reached</p>
+      <p><span data-stat="years">7</span>+ years in business</p>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; 2026 fraxBIT demo build. All rights reserved.</p>
+    <p>Design · Build · Grow</p>
+  </div>
+</footer>
+
+<!-- Detail sheet -->
+<div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+<aside class="detail-sheet" id="detailSheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <button class="sheet-close" id="sheetClose" aria-label="Close details">&#10005;</button>
+  <p class="sheet-code" id="sheetCode"></p>
+  <h3 id="sheetTitle"></h3>
+  <div class="sheet-body" id="sheetBody"></div>
+  <div class="sheet-actions" id="sheetActions"></div>
+</aside>
+
+<!-- Booking sheet (strategy call) -->
+<aside class="detail-sheet booking-sheet" id="bookingSheet" hidden role="dialog" aria-modal="true" aria-labelledby="bookTitle">
+  <button class="sheet-close" id="bookClose" aria-label="Close booking">&#10005;</button>
+  <p class="sheet-code">fraxBIT · Strategy call</p>
+  <h3 id="bookTitle">Book a strategy call</h3>
+  <p class="sheet-intro">Thirty minutes with the people who would do the work. Pick a day and time, tell us the topic, and we confirm with a reference.</p>
+  <form id="bookForm" novalidate>
+    <div class="pf-row">
+      <label>Your name<input type="text" id="bkName" placeholder="Full name" autocomplete="name"></label>
+      <label>Work email<input type="email" id="bkEmail" placeholder="you@company.com" autocomplete="email"></label>
+    </div>
+    <div class="pf-row">
+      <label>Day
+        <select id="bkDay"></select>
+      </label>
+      <label>Time
+        <select id="bkTime">
+          <option>09:00</option><option>11:00</option><option>14:00</option><option>16:30</option>
+        </select>
+      </label>
+    </div>
+    <label>Topic
+      <select id="bkTopic">
+        <option>Web Design</option>
+        <option>Development</option>
+        <option>Growth</option>
+        <option>AI Integration</option>
+        <option>Not sure yet</option>
+      </select>
+    </label>
+    <p class="form-error" id="bkError" hidden></p>
+    <button class="btn btn-red pf-submit" type="submit">Confirm the call</button>
+    <div class="form-success" id="bkSuccess" hidden>
+      <p class="fs-title">Call booked.</p>
+      <p id="bkSuccessText"></p>
+      <button class="text-link dark" type="button" id="bkAgain">Book another call</button>
+    </div>
+  </form>
+</aside>
+
+<button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
